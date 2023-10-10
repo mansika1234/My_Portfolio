@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body 
+{
+    background-image:url(Purple\ and\ Peach\ Rainbow\ Waves\ Desktop\ Wallpaper.png);
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.right 
+{
+
+  /* color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:Optima;
+  font-size:25px; */
+} 
+.right ul{
+  list-style: none;
+  
+  display: flex;
+  justify-content: space-between;
+}
+.right ul li a{
+  text-decoration: none;
+  padding: 2vh 4vw;
+  font-family: optima;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+}
+.left {
+  display: flex;
+  padding: 0 2.5vw;
+}
+.left a{
+  text-decoration: none;
+  font-family: optima;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+  transition: all 0.5s ease-in-out; 
+}
+.left a:hover:not(.active){
+  transform: scale(1.2);
+}
+.right li a:hover:not(.active){
+  background-color: rgba(199, 161, 235, 0.642);
+}
+.line {
+  width: 95vw;
+  height: 1px;
+  background-color: black;
+  margin-bottom: 50px;
+  margin-left: 2%;
+}
+.line1 {
+  width: 50vw;
+  height: 1px;
+  background-color: black;
+  margin-bottom: 50px;
+  margin-left: 48%;
+  margin-right: -50%;
+}
+ img {
+  height: 500px;
+  width: 400px;
+  position: 100px 200px;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width:30vw;
+  height: 75vh;
+  margin: 0 5%;
+  border-radius: 5px;
+  background-color: white;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.contact{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width:90vw;
+  height: 70vh;
+  margin: 9% 5%;
+  border-radius: 2rem;
+  background-image: url(Green\ Wateroclor\ Leaf\ Linktree\ Background.png);
+}
+.contact:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img{
+  border-radius: 5px 5px 0 0;
+  width: 30vw;
+  height: 60vh;
+}
+.right-section{
+  position: absolute;
+  top: 20%;
+  left: 48%;
+  /* background-color: aliceblue; */
+  width: 45vw;
+  text-align: justify;
+}
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+.right-section p {
+  align-content:center;
+  top: 30%;
+  left: 30%;
+  margin: 20px 5px;
+  color: hsl(210, 40%, 2%);
+  font-family: 'Gochi Hand', cursive;
+  font-weight: 400;
+  font-size: 120%;
+  line-height: 1.3;
+  display: inline;
+  background-image: linear-gradient(
+        transparent 50%,
+        #f3f6b0f6 50%,
+        #fff152f4 85%,
+        transparent 85%,
+        transparent 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    animation: animatedBackground 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+}
+
+@keyframes animatedBackground {
+    to {
+        background-size: 100% 100%;
+    }
+}
+.right-section h1{
+  margin-bottom: 30px;
+}
+.container1{
+padding: 2px 16px;
+width:30vw;
+height: 60vh;
+}
+.container1 p {
+  margin-top:2.3em;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 14px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 80px 2px;
+  margin-top: 145px;
+  transition-duration: 0.4s;
+  cursor:grab;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 1px solid #570083;
+}
+
+.button1:hover {
+  background-color: #9d48e8a0;
+  color: white;
+}
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 1px solid #008CBA;
+  margin-left: 40px;
+}
+
+.button2:hover {
+  background-color: #12a3d4d5;
+  color: white;
+}
+
+.box{
+   display: grid;
+}
+ H1
+{
+   text-align: center;
+   margin-top: 5px;
+}
+.pro1{
+  margin: 5% 3%;
+}
+.pro1 h2{
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-left: 9%;
+}
+.p1{
+  display: flex;
+  flex-direction: row;
+  margin: 2% 9%;
+  gap: 10rem;
+}
+.p2{
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  margin: 2% 9%;
+  gap: 10rem;
+}
+.p1 .back-box{
+  border-radius: 25px;
+  border: 10px solid rgb(0, 0, 0);
+  width: 28.5vw;
+  height: 45vh;
+  margin-top:-4vh;
+}
+.back-box .first-img img{
+  border-radius: 25px;
+  width: 30vw;
+  height: 50vh;
+  position: relative;
+  top: -9vh;
+  left: 2vw;
+  border: 2px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.leftpara1{
+  width:50%;
+  height: 30%;
+  text-align: justify;
+  font-size: 1.3rem;
+  font-family:'Gochi Hand', cursive;
+}
+.leftpara2{
+  width:50%;
+  height: 30%;
+  font-size: 1.3rem;
+  font-family:'Gochi Hand', cursive;
+}
+.button3 {
+  background-color: #010301;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius:2rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button3:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(155, 138, 230);
+  border-radius: 4px;
+}
+
+#mail{
+margin-bottom:20px;
+
+}
+#heading{
+  text-align: center;
+  margin-left: 25%;
+}
+#skill{
+  text-align: 25%;
+  margin-bottom:-11vh;
+}
+#cont{
+  text-align: 25%;
+  margin-top: 10vh;
+}
+div.gallery {
+  margin: 3vw;
+  /* border: 1px solid #ccc; */
+  width: 8vw;
+  height: 7vh;
+  margin-right:3vw;
+  transition: transform .8s;
+}
+div.gallery:hover {
+  /* border: 1px solid #777; */
+  -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  
+}
+.sec{
+  margin: 9% 5%;
+}
+.part1{
+display: flex;
+justify-content: space-around;
+margin: 5% 0;
+}
+.part2{
+display: flex;
+justify-content: space-around;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius:2rem;
+  transition: transform 0.6s;
+  transform-style:preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  border-radius:2rem;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  background-image: url(Beige\ and\ Green\ Aesthetic\ Boho\ Watercolor\ Leaves\ Phone\ Wallpaper.png);
+}
+
+.flip-card-back {
+  /* background-color: #2980b9; */
+ background-image:url(Beige\ and\ Green\ Aesthetic\ Boho\ Watercolor\ Leaves\ Phone\ Wallpaper.png);
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+}
+.icons{
+  display: flex;
+  flex-direction: column;
+  margin-top:9%;
+  gap:1.5rem;
+}
+.icons a{
+  color:#010301;
+  text-decoration: none;
+}
+.icons a i{
+  scale: 1.5;
+  margin-right: 5%;
+}
+/* @media screen and (max-width: 600px) 
+{
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+} */
+
+</style>
+</head>
+<body>
+<nav id="top">
+  <div class="left">
+    <a href="#top">MANSIKA SAHOO</a>
+  </div>
+  <div class="right">
+    <ul>
+      <li class="CONTACT"><a href="#cont-card">CONTACT</a>
+        <li class="ABOUT"><a href="#projects">MY PROJECTS</a>
+        <li class="HOME"><a href="#top">HOME</a>
+      </li>
+    </ul>
+  </div>
+ </nav>
+
+ <div class="box">
+  <div class="line"></div>
+
+ <div class="right-section">
+  <h1>ABOUT ME</h1>
+  <p> I am currently pursuing my degree with a keen interest in computer science and technology. I have a solid foundation in basic coding and enthusiastic about expanding my knowledge and skills . My academic journey has equipped me with problem-solving abilities and a passion for exploring new horizons in technology. I am actively seeking opportunities to enhance my coding expertise and contribute to innovative projects.</p> 
+  <button class="button button1">Download CV</button> 
+  <button class="button button2">Contact Me</button> 
+</div>
+  
+
+<div class="card">
+   <img src="pic1.jpeg" alt="pic">
+   <div class="container1">
+     <h2><b>Mansika Sahoo</b></h2>
+     <p>FrontEnd Developer</p>
+   </div>
+  </div>
+  <div class="line1"></div>
+  <H1 id="projects">MY PROJECTS</H1>
+  <div class="proj">
+    <div class="pro1">
+      <h2>SnM Eshop</h2>
+      <div class="p1">
+        <div class="leftpara1">
+          I am currently pursuing my degree with a keen interest in computer science and technology. I have a solid foundation in basic coding and enthusiastic about expanding my knowledge and skills . My academic journey has equipped me with problem-solving abilities and a passion for exploring new.
+        </div>
+        <div class="back-box">
+          <div class="first-img">
+            <img src="Screenshot (423).png" alt="p2">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pro1">
+      <h2 id="heading">Naari-Netra</h2>
+      <div class="p1">
+        <div class="back-box">
+          <div class="first-img">
+            <img src="Screenshot (425).png" alt="p2">
+          </div>
+        </div>
+        <div class="leftpara1">
+          I developed "Naari-Netra" ,a web project using HTML, JavaScript, and CSS, with a focus on women's empowerment and safety amidst increasing abuse cases. It offers resources, self-defense tips, and a panic button for immediate help. The design is user-friendly, emphasizing privacy and support for women. It's a vital tool for raising awareness and ensuring women's security. 
+        </div> 
+      </div>
+    </div>
+    <div class="pro1">
+      <h2>Temperature Converter</h2>
+      <div class="p1">
+        <div class="leftpara1">
+          I created a temperature converter project using HTML, JavaScript, and CSS. It's a web application that allows users to convert between Fahrenheit and Celsius. The HTML structure provides the user interface, while CSS styles make it visually appealing. JavaScript handles the conversion logic, updating results instantly as users input values.  
+        </div>
+        <div class="back-box">
+          <div class="first-img">
+            <img src="Screenshot (427).png" alt="p2">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+</div>
+ 
+<div class="sec">
+  <H1 id="skill">EXPERIENCE</H1>
+
+<div class="part1">
+  <div class="gallery">
+    <a>
+      <img src="html-removebg-preview.png" alt="" width="600" height="400">
+    </a>
+  </div>
+  
+  <div class="gallery">
+    <a>
+      <img src="css-removebg-preview.png" alt="Cinque Terre" width="600" height="400">
+    </a>
+  </div>
+    
+  <div class="gallery">
+    <a>
+      <img src="py-removebg-preview.png" alt="Cinque Terre" width="600" height="400">
+    </a>
+  </div>
+  
+    <div class="gallery">
+      <a>
+        <img src="java-remove.png" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+</div>
+
+  <div class="part2">
+    <div class="gallery">
+      <a>
+        <img src="c-removebg-preview.png" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+  
+    <div class="gallery">
+      <a>
+        <img src="rust1-removebg-preview.png" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+  
+  <div class="gallery">
+    <a>
+      <img src="cloud-removebg-preview.png" alt="Cinque Terre" width="600" height="400">
+    </a>
+  </div>
+    
+    <div class="gallery">
+      <a>
+        <img src="mysql-removebg-preview.png" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="contact" id="cont-card">
+ <div class="card1">
+ <h1 id="cont">CONTACT</h1>
+ 
+ <div class="p2">
+  
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <!-- <img src="p4.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
+       
+       <h2>Thanks</h2>
+       <h2>For</h2>
+       <h2>Connecting!</h2>
+    </div>
+    <div class="flip-card-back">
+      <!-- <h1>John Doe</h1> 
+      <p>Architect & Engineer</p> 
+      <p>We love that guy</p> -->
+      
+      <h1 id="mail">Mail Me Here!</h1>
+
+      <form action="/action_page.php">
+        <label for="fname"><h3>First Name:</h3></label>
+        <input type="text" id="fname" name="fname" value="">
+        <label for="lname"><H3>Last Name:</H3></label>
+        <input type="text" id="lname" name="lname" value="">
+        <input type="button" class="button3" value="SUBMIT">
+       </form>
+
+    </div>
+  
+  </div>
+</div>
+
+<div class="leftpara2">
+ FOLLOW ME ON MY SOCIAL HANDLES:
+ <div class="icons">
+  <div><a href="#"><i class='bx bxl-github'></i> mansika1234</a></div>
+  <div><a href="#"><i class='bx bxl-linkedin-square'></i> Mansika Sahoo</a></div>
+  <div><a href="#"><i class='bx bxl-gmail'></i> mansikasahoo12218@gmail.com</a></div>
+  <div><a href="#"><i class='bx bxl-instagram'></i> mansika</a></div>
+ </div>
+</div>
+
+ </div>
+
+
+</div>
+
+  </div>
+</div>
+</body>
+</html>
